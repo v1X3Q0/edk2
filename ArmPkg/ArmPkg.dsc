@@ -46,6 +46,7 @@
   UefiRuntimeServicesTableLib|MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
   PeCoffLib|MdePkg/Library/BasePeCoffLib/BasePeCoffLib.inf
   PeCoffGetEntryPointLib|MdePkg/Library/BasePeCoffGetEntryPointLib/BasePeCoffGetEntryPointLib.inf
+  RngLib|MdePkg/Library/BaseRngLib/BaseRngLib.inf
 
   UefiHiiServicesLib|MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.inf
   HiiLib|MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf
@@ -138,6 +139,8 @@
   ArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
 
   ArmPkg/Drivers/ArmScmiDxe/ArmScmiDxe.inf
+
+  SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.inf
 
 [Components.AARCH64]
   ArmPkg/Library/ArmMmuLib/ArmMmuPeiLib.inf

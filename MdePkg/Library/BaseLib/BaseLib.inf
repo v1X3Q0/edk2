@@ -328,6 +328,8 @@
   Math64.c                   | RVCT
   Math64.c                   | MSFT
 
+  ARMRdRand.c
+
   Arm/SwitchStack.asm        | RVCT
   Arm/SetJumpLongJump.asm    | RVCT
   Arm/DisableInterrupts.asm  | RVCT

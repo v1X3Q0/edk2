@@ -39,6 +39,7 @@ BaseRngLibConstructor (
   VOID
   )
 {
+#if defined (MDE_CPU_IA32) || defined (MDE_CPU_X64)
   UINT32  RegEcx;
 
   //
@@ -47,7 +48,7 @@ BaseRngLibConstructor (
   //
   AsmCpuid (1, 0, 0, &RegEcx, 0);
   ASSERT ((RegEcx & RDRAND_MASK) == RDRAND_MASK);
-
+#endif
   return RETURN_SUCCESS;
 }
 

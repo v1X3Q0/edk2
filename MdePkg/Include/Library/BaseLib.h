@@ -7805,6 +7805,8 @@ AsmPrepareAndThunk16 (
   IN OUT  THUNK_CONTEXT             *ThunkContext
   );
 
+#endif
+
 /**
   Generates a 16-bit random number through RDRAND instruction.
 
@@ -7855,6 +7857,8 @@ EFIAPI
 AsmRdRand64  (
   OUT     UINT64                    *Rand
   );
+
+#if defined (MDE_CPU_IA32) || defined (MDE_CPU_X64)
 
 /**
   Load given selector into TR register.

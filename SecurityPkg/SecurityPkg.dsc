@@ -327,6 +327,9 @@
   #
   SecurityPkg/FvReportPei/FvReportPei.inf
 
+[Components.ARM]
+  SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.inf
+
 [BuildOptions]
    MSFT:*_*_IA32_DLINK_FLAGS = /ALIGN:256
   INTEL:*_*_IA32_DLINK_FLAGS = /ALIGN:256
